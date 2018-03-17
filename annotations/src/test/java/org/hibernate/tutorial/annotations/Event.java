@@ -34,8 +34,8 @@ import javax.persistence.TemporalType;
 
 import org.hibernate.annotations.GenericGenerator;
 
-@Entity
-@Table( name = "EVENTS" )
+@Entity//dzięki tej adnotacji instancje tej klasy beda wierszami w tabelkach
+@Table( name = "EVENTS" )//tą adnotacja nadajemy nazwe
 public class Event {
     private Long id;
 
